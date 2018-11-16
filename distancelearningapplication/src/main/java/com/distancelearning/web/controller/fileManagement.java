@@ -1,0 +1,13 @@
+package com.distancelearning.web.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class fileManagement {
+	
+	@RequestMapping(value="index.php")
+	public String index() {
+		return "hello";
+	}
+}
