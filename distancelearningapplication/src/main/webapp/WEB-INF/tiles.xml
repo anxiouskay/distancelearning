@@ -1,0 +1,39 @@
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/jsp/admin/adminmaster.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	<!-- userpanel -->
+	<!-- <definition name="base.definitionuserpanel"
+		template="/WEB-INF/jsp/user/userHome.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition> -->
+	<!-- end -->
+
+	<!-- <definition name="home" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/user/welcome.jsp" />
+	</definition> -->
+
+	<!-- definition name="base.defin" template="/WEB-INF/jsp/admin/login.jsp"> 
+		</definition> <definition name="base.getdata" template="/WEB-INF/jsp/admin/ajaxformaterial.jsp"> 
+		</definition> <definition name="login" extends="base.defin"> </definition> -->
+
+	<definition name="hello" extends="base.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/admin/adminhome.jsp" />
+	</definition>
+	<definition name="hey" extends="base.definition">
+		<put-attribute name="title" value="Admin Hey" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/admin/adminhey.jsp" />
+	</definition> 
+</tiles-definitions>
