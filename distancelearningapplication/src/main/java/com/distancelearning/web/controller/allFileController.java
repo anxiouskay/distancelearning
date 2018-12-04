@@ -10,4 +10,9 @@ public class allFileController {
 	public String index() {
 		return "hello";
 	}
+	
+	@RequestMapping(value="hey.php")
+	public String hey() {
+		return "hey";
+	}
 }
